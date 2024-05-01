@@ -12,12 +12,12 @@ class Student(models.Model):
         return self.name
 
 
-
 class Teacher(models.Model):
     name = models.CharField('Имя', max_length=100)
 
     class Meta:
         verbose_name = 'Преподаватель'
         verbose_name_plural = 'Преподаватели'
+
     def __str__(self) -> str:
         return self.name
